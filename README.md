@@ -1,47 +1,63 @@
-Feature. Java 8 as a language
+# DemoProject
+## Table of contents
+* [General info](#general-info)
+* [Technologies](#technologies)
+* [Setup](#setup)
+* [About Test Framework](#about-test-framework)
+* [Reporting](#reporting)
 
-1-Selenium Webdriver
+## General info
+ Outline a brief description of this project.
+- Selenium Framework with TestNG
+- TestNG based Framework
 
-2-Extent Spark Report
+	
+## Technologies
+Project is created with:
+* JAVA Version - jdk1.8.0_291
+* Selenium-WebDriver version- 3.141.59
+* 
+* TestNG Version - 7.3.0
 
-3-Log4j2
+## Setup
+- Intall java from - https://www.oracle.com/in/java/technologies/javase/javase-jdk8-downloads.html
+Setup JAVA_HOME path
+- Install MAVEN- https://maven.apache.org/download.cgi
+Setup .M2 and MAVEN_HOME path as per the below screenshot
+![image](https://user-images.githubusercontent.com/88622330/128636681-414f6dab-7205-4725-97be-b94fe36d5864.png)
+- Download and Import the project.
+- Let MAVEN to install all the dependencies.
+- Run Below MAVEN Commands in CMD.
 
-4-Cross Browser Testing - Chrome, Firefox, IE
+```
+ mvn clean
+ mvn compile
+ mvn test
+  ``` 
+	
+## About Test Framework
+The framework has following features
 
-Setup Pre-requisite***
+* Maven based framework
+* Log4j enabled for logging
+* Integrated HTML adn PDF report by using Extent Spark lib/plugins
+* Centralized Configuration (Using Properties file)
 
-5-Setup Project on Machine for work
+**Same Commands can be configured in CICD tools like Jenkins, TeamCity**
 
-6-Install Eclipse software.
+MAVEN COMMANDS:-
 
-7-Install java
+* mvn clean
+* mvn compile
 
-8-Launch Eclipse
+## Reporting
+	
+ * 1-Reporting of all the test cases.
+ * 2-Can check the error logs.
+ * 3-Check the screenshot where the test case is failing.
+  
+  
 
-9-Select Exisitng Maven Project.
 
-10-Browse the project.
 
-11-Check Pom.xml
-
-12-Set path for Chromewebdriver.exe and Properties File (As I am using prop file to fetch browser and URL's)
-
-13-Run testing.xml
-
-14-wait till project run completly. Once it finished.
-
-15-Now check reports folder.
-
-16-Open Index.html (To view the status of your test cases Pass/Fail)
-
-17-Check logs in logs folder.
-
-You can use MAVEN Commands as well to run from CMD Give the path of the project in CMD, and then fire below commands.
-
-mvn clean
-
-mvn compile
-
-mvn test
-
-Happy Testing!!!!
+```
